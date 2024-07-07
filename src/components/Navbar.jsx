@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { CoinContext } from '../context/CoinContext';
 import NavMenu from './Navbar/NavMenu';
 import Sidebar from './Navbar/Sidebar';
-
+import logo from '../assets/logo.png';
+import menu from '../assets/menu.png';
 
 const Navbar = () => {
 
@@ -57,7 +58,7 @@ const Navbar = () => {
     return (
         <div className={`${isVisible ? 'block' : 'hidden'} fixed w-full  bg-gradient-to-b from-indigo-950 to-purple-800 shadow-md shadow-indigo-600 flex justify-between px-2 items-center h-fit py-3 `}>
             <div className='flex md:w-3/12 w-1/2 items-center gap-1'>
-                <img src="src\assets\logo.png" alt="Logo" className='h-8 md:h-10 ' />
+                <img src={logo} alt="Logo" className='h-8 md:h-10 ' />
                 <h1 className='text-3xl '>CryptoMania</h1>
             </div>
            <NavMenu />
@@ -71,7 +72,7 @@ const Navbar = () => {
                       Contact Us
                 </button>
                 <button onClick={toggleSidebar} className=' w-7 md:hidden '> 
-                   <img  src="./src/assets/menu.png" alt="" />
+                   <img  src={menu} alt="Menu" />
                 </button>
                 <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
             </div>
