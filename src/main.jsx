@@ -7,6 +7,7 @@ import Home from './pages/Home/Home.jsx'
 import News from './pages/News/News.jsx';
 import Market from './pages/Market/Market.jsx';
 import CoinContextProvider from './context/CoinContext.jsx';
+import Footer from './components/Footer.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/news" element={<News />} />
         <Route path="/market" element={<Market />} />
       </Routes>
+      <Footer/>
     </div>
     </CoinContextProvider>
      </BrowserRouter>
