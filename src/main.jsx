@@ -1,9 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import App from './App.jsx'
 import './index.css'
-import Navbar from './components/Navbar/Navbar.jsx'
+import Navbar from './components/Navbar.jsx'
 import Home from './pages/Home/Home.jsx'
 import News from './pages/News/News.jsx';
 import Market from './pages/Market/Market.jsx';

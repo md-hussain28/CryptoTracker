@@ -8,8 +8,8 @@ const Home = () => {
 
     return (
         <div className='bg-custom  h-screen text-blue-500 flex flex-col items-center justify-center'>
-            <h1 className='mt-52 text-4xl'>Welcome to CryptoMania</h1>
-            <h2 className='text-xl'>Your one stop solution for crypto</h2>
+            <h1 className='mt-20 text-center text-4xl'>Welcome to CryptoMania</h1>
+            <h2 className='text-xl text-center'>Your one stop solution for crypto</h2>
             <div className='flex flex-col items-center justify-center min-w-fit'>
                 <form action="" className='bg-blue-800 w-fit py-1 rounded-xl m-4 px-2'>
                     <input type="search" name="coinsearch" id="" placeholder='Search Coins'
