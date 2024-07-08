@@ -33,6 +33,9 @@ const Market = () => {
     setVal(filtered);
     setSearchQuery("");
   };
+  const handleCloseModal = () => {
+    setVal(null);
+  };
 
   return (
     <>
@@ -65,7 +68,8 @@ const Market = () => {
 
 
         </div>
-        <CoinData data={val} /> {/* Pass data as a prop */}
+        <CoinData data={val} />
+        <CoinData data={val ? val : []} onClose={handleCloseModal} /> {/* Pass data as a prop */}
       </div>
 
     </>
