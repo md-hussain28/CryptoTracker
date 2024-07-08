@@ -68,7 +68,7 @@ const Market = () => {
 
 
         </div>
-        <CoinData data={val} />
+        
         <CoinData data={val ? val : []} onClose={handleCloseModal} /> {/* Pass data as a prop */}
       </div>
 

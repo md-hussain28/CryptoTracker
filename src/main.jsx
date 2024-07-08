@@ -9,10 +9,12 @@ import Market from './pages/Market/Market.jsx';
 import CoinContextProvider from './context/CoinContext.jsx';
 import Footer from './components/Footer.jsx';
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
     <CoinContextProvider>
+   
     <div>
       <Navbar/>
       <Routes>
@@ -22,7 +24,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </Routes>
       <Footer/>
     </div>
+   
     </CoinContextProvider>
+    
      </BrowserRouter>
   </React.StrictMode>,
 )
